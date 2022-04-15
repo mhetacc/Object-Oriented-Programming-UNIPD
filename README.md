@@ -10,7 +10,7 @@ qmake Progetto_gui.pro
 make
 ```
 ### Java build:
-```sh
+```
 cd Progetto_pao1718/java/esecuzione
 javac *.java
 java Use
