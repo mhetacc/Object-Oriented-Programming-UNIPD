@@ -18,4 +18,4 @@ java Use
 ## Test mode without gui ("testing" dir)
 
 ### Command-line usage:
-Use ```sh inputterminal.cpp```, commands are written as //comments at the end of the file
+Use ``` inputterminal.cpp```, commands are written as //comments at the end of the file
