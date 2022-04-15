@@ -1,5 +1,5 @@
 # Object-Oriented-Programming-UNIPD
-OOP course's assignment, CS degree UNIPD
+OOP course assignment, CS degree UNIPD
 
 ## Completed project with QT-creator gui ("completed" dir)
 
