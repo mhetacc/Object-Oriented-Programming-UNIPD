@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KalkWidget</class>
+ <widget class="QMainWindow" name="KalkWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1074</width>
+    <height>862</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>KalkWidget</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="labelMC">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>391</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nextButton">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>20</y>
+      <width>83</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="precButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>83</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Previous</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="mainText">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>130</y>
+      <width>661</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Cantarell'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scoreButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>350</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Get Score</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scoreLabel">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>350</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newTW">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>100</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>New Tower</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newLP">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>100</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>New Laptop</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newSM">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>100</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>New Smartphone</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="priceLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>420</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PRICE</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="priceEdit">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>420</y>
+      <width>113</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETprice">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>420</y>
+      <width>31</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cpuLabel">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>470</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CPU</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cpumemLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cache (MB)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cpucoresLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>530</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cores</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cpuclockLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>560</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clockspeed (MHz)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cpuhyLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>600</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hyperthreading</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cpumemEdit">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>500</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cpucoresEdit">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>530</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cpuclockEdit">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>560</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETcpumem">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>500</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETcpucores">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>530</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETcpuclock">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>560</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hyperYesButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>600</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>YES</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gpucoresEdit">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>530</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETgpuband">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>590</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gpuclockEdit">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>560</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETgpucores">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>530</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gpubandLabel">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>590</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bandwidth (GB/s)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gpubandEdit">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>590</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gpucoresLabel">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>530</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cores</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gpumemEdit">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>500</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETgpuclock">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>560</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gpuLabel">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>470</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GPU</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETgpumem">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>500</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gpuclockLabel">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>560</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clockspeed (MHz)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gpumemLabel">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>500</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ram DDR5 (MB)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hyperNoButton">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>600</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NO</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gpupresYesButton">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>630</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>YES</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gpupresLabel">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>630</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Presence</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gpupresNoButton">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>630</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NO</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ramclockEdit">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>530</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rammemEdit">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>500</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETramclock">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>530</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ramLabel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>470</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RAM</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETrammem">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>500</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ramclockLabel">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>530</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clockspeed (MHz)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rammemLabel">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>500</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dimension (MB)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETmemmem">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>610</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="memLabel">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>580</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SECONDARY MEMORY</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="memmemEdit">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>610</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="memdimLabel">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>610</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dimension (MB)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETmemwrite">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>640</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="memwriteEdit">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>640</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="memwriteLabel">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>640</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Write speed (MB/s)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="memreadEdit">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>670</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="memreadLabel">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>670</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Read speed (MB/s)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="screenLabel">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>720</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SCREEN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="screendimLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>790</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dimension (diagonal inches)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETscreenres">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>750</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETscreendim">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>790</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="screendimEdit">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>790</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="screenresLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>750</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resolution (pixel)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="screenWEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>750</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="screeHEdit">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>750</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resXlabel">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>750</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="batteryLabel">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>780</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BATTERY</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="batmahLabel">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>810</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mAh</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETbattery">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>810</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="batteryEdit">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>810</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wghLabel">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>710</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>WEIGHT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wghgramsLabel">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>750</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grams</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="wghEdit">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>740</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETwgh">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>740</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="brodbandLabel">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>720</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BROADBAND GEN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETbbgen">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>750</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bbgenLabel">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>750</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generation</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="bbgenEdit">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>750</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDpriceButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>420</y>
+      <width>31</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="removeButton">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>310</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Remove Machine</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="errorOutput">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>661</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDcpumem">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>500</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDcpucores">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>530</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDcpuclock">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>560</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDgpumem">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>500</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDgpucores">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>530</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDgpuclock">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>560</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDgpuband">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>590</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDrammem">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>500</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDramclock">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>530</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDmemmem">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>610</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDwrite">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>640</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDread">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>670</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDbattery">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>810</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADDwgh">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>740</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>add</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SETmemread">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>670</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>set</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
