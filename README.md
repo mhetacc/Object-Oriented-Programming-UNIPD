@@ -4,7 +4,7 @@ OOP course's assignment, CS degree UNIPD
 ## Completed project with QT-creator gui ("completed" dir)
 
 ### C++ build:
-```sh
+```
 cd Progetto_pao1718/Progetto_gui
 qmake Progetto_gui.pro
 make
